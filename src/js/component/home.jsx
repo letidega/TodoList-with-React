@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import Input from "./input.jsx";
 import Todolist from "./todolist.jsx"
 import Button from "./button.jsx"
+import "/workspace/react-hello/src/styles/home.css"
 
 //create your first component
 const Home = () => {
@@ -24,14 +25,15 @@ const Home = () => {
 	const removeTask = (id) => {
 		const auxTasks = [...tasks]	
 		const result = auxTasks.filter((task) => task.id !== id)
-		console.log(result)
+		setTasks(result);
 	}
 
 	return (
-		<div className="text-center">
-			<Input value={taskValue} onChange={(e) => setTaskValue(e.target.value)}/>
-			<Todolist tasks={tasks} removeTask={removeTask}/>
-			<Button onClick={addTask} value="Oprimir"/>
+		<div className="text text-center">
+			<h1>Todo List</h1>
+			<Input value={taskValue} onChange={(e) => setTaskValue(e.target.value)} />
+			<Button onClick={addTask} value="Oprimir" />
+			<Todolist tasks={tasks} removeTask={removeTask} />
 		</div>
 	);
 };

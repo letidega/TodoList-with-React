@@ -1,0 +1,19 @@
+body {
+    background-color:whitesmoke;
+    margin-top: 15px;
+    
+}
+.text {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-family: 'Heebo', sans-serif;
+    font-family: 'Kalam', cursive;
+    font-family: 'Lobster Two', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 60px;
+    color: #ff828b;
+}

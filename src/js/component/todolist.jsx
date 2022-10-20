@@ -1,8 +1,8 @@
 import React from "react"
 
-const TodoList = (props) => {
-    return <div>
-    {props.tasks.map((task) => <div>{task.text} <buton onClick={() => props.removeTask(task.id)}>X</buton></div>)}
+const TodoList = ({tasks, removeTask}) => {
+    return <div className="mt-3">
+        {tasks.length == 0 ? "No hay tareas, añade una" : tasks.map((task, index) => <div key={index}>{task.text} <button onClick={() => removeTask(task.id)}>X</button></div>)}
     </div>
 }
 
