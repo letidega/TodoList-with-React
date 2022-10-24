@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import Input from "./input.jsx";
 import Todolist from "./todolist.jsx"
 import Button from "./button.jsx"
-import "/workspace/react-hello/src/styles/home.css"
+import "../../styles/home.css"
 
 //create your first component
 const Home = () => {
